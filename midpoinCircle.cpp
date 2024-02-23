@@ -9,7 +9,7 @@ void midpoint(int x1, int y1, int r, GLfloat color[3]) { //function for the draw
 
     int x = 0, y = r, p = 1 - r; //decision parameters p is calculated using the formula 1-r, where r is the radius
 
-    while (x <= y) { //increment the value of x until the point where the x-value exceeds the y-value
+    while (x <= y) { //increment the value of x until the point where the x-value exceeds the y-value(the interchange point)
         x++;
         if (p < 0) //
             p = p + 2 * x + 1; 
