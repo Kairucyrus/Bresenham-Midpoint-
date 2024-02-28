@@ -23,7 +23,7 @@ void midpoint(int x1, int y1, int r, GLfloat color[3]) { //function for the draw
 
 void circle(int x1, int y1, int x, int y) {
     glBegin(GL_TRIANGLE_STRIP);
-    glVertex2i(x1 + x, y1 + y); //vertices for the eight octants of the circle
+    glVertex2i(x1 + x, y1 + y); //vertices for the eight octants of the circle obtained through mirroring
     glVertex2i(x1 + y, y1 + x);
     glVertex2i(x1 - y, y1 + x);
     glVertex2i(x1 - x, y1 + y);
