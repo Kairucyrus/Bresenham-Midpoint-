@@ -4,7 +4,6 @@
 const int lx = 500; //defining the dimensions of the window sizes
 const int ly = 500;
 void midpoint(int x1, int y1, int r, GLfloat color[3]) { //function for the drawing of the circle
-
     void circle(int, int, int, int); // method that takes three parameters: the starting points (x,y) and the radius
 
     int x = 0, y = r, p = 1 - r; //decision parameters p is calculated using the formula 1-r, where r is the radius
@@ -23,7 +22,7 @@ void midpoint(int x1, int y1, int r, GLfloat color[3]) { //function for the draw
 
 void circle(int x1, int y1, int x, int y) {
     glBegin(GL_TRIANGLE_STRIP);
-    glVertex2i(x1 + x, y1 + y); //vertices for the eight octants of the circle obtained through mirroring
+    glVertex2i(x1 + x, y1 + y); //vertices for the eight octants of the circle obtained through mirroring.
     glVertex2i(x1 + y, y1 + x);
     glVertex2i(x1 - y, y1 + x);
     glVertex2i(x1 - x, y1 + y);
