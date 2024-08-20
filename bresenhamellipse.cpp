@@ -3,7 +3,7 @@
 
 const int cx = 500;
 const int cy = 500;
-//Bresenham's ellipse drawing algorithm.
+//Bresenham's ellipse drawing algorithm
 void drawEllipse(int a, int b, GLfloat color[3]) {
     glBegin(GL_TRIANGLE_STRIP); //drawing the ellipse in fill color
     int x = 0, y = b;
