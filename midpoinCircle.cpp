@@ -1,7 +1,8 @@
 #include <iostream>
 #include <GL/glut.h>
 
-const int lx = 500; //defining the dimensions of the window sizes
+//defining the dimensions of the window sizes
+const int lx = 500; 
 const int ly = 500;
 void midpoint(int x1, int y1, int r, GLfloat color[3]) { //function for the drawing of the circle
     void circle(int, int, int, int); // method that takes three parameters: the starting points (x,y) and the radius
